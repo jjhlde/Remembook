@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.remembook.kimryoji.remembook.MainActivity"
+    tools:showIn="@layout/activity_main"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        >
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvBookInfo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+        </android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        >
+        <EditText
+            android:id="@+id/etBookTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="맥심"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+        <Button
+            android:id="@+id/btnRequestApi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="정보 불러오기"
+            />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
